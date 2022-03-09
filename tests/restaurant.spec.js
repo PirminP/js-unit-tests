@@ -44,9 +44,26 @@ const createMenu = require('../src/restaurant');
 
 */
 
+const testOrder = (array) => {
+  const obj = createMenu();
+  for (let value of array) {
+    obj.order(value);
+  }
+  return obj.consumption;
+}
+
+const testPay = (array, object) => {
+  const obj = createMenu(object);
+  const menu = createMenu(object).fetchMenu()
+  for (let value of array) {
+    obj.order(value);
+  }
+  return obj.pay()
+}
+
 describe('10 - Implemente os casos de teste e a função `createMenu`', () => {
   it('Verifica se a função `createMenu` tem o comportamento esperado', () => {
-    fail('Teste vazio!');
+    // fail('Teste vazio!');
     // TESTE 1: Verifique se o retorno da função createMenu() é um objeto que possui a
     // chave fetchMenu, a qual tem como valor uma função.
     // ```
@@ -109,5 +126,14 @@ describe('10 - Implemente os casos de teste e a função `createMenu`', () => {
     // objetoRetornado.pay() // Retorno: somaDosPreçosDosPedidos
     // ```
     // Agora faça o PASSO 4 no arquivo `src/restaurant.js`.
+    expect(typeof createMenu().fetchMenu).toBe('function');
+    expect(createMenu({ food: {}, drink: {} }).fetchMenu()).toEqual({ food: {}, drink: {} });
+    expect(createMenu({abc: 'deco', dad: 'dada'}).fetchMenu()).toEqual({abc: 'deco', dad: 'dada'});
+    expect(createMenu().consumption).toEqual([]);
+    expect(testOrder(['coxinha'])).toEqual(['coxinha']);
+    expect(testOrder(['coxinha', 'agua', 'sopa', 'sashimi'])).toEqual(['coxinha', 'agua', 'sopa', 'sashimi']);
+    expect(testOrder(['coxinha', 'agua', 'coxinha'])).toEqual(['coxinha', 'agua', 'coxinha']);
+    expect(testPay(['coxinha', 'agua', 'coxinha'], {food: {coxinha: 10, sopa: 20, sashimi: 30}, drinks: {agua: 5, coca:7}})).toBeCloseTo(27.5);
+    expect(testPay(['coxinha', 'coca', 'sashimi', 'sopa'], {food: {coxinha: 10, sopa: 20, sashimi: 30}, drinks: {agua: 5, coca:7}})).toBeCloseTo(73.7);
   });
 });
