@@ -1,10 +1,18 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+# Project JavaScript Unit Tests
+
+### This project consists of creating several functions to meet specific requirements and/or unit tests to ensure the implemented functions are correct.
+
+* Designed by using JavaScript
+
+## Description of created functions:
+
+
+<!---
+`compareTrue`: receives two boolean values and returns `true` if received values are true.\
+
+`calcArea`: receives a `base` and `height` and returns the `area` of a triangle.
+
+`splitSentence`: receives a `string` and returns an `array` of `strings` seperated by space of 
+original string
+
 -->
