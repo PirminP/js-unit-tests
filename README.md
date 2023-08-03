@@ -18,11 +18,4 @@ trabalho na Trybe e mando muito em programação!
 #VQV!
 ```
 
-<!---
-`compareTrue`: receives two boolean values and returns `true` if received values are true.\
-
-`calcArea`: receives a `base` and `height` and returns the `area` of a triangle.
-
-`splitSentence`: receives a `string` and returns an `array` of `strings` seperated by space of 
-original string
--->
+`circle` (test): function which receives a circle radius and returns an `object` containing information like radius, area and circumference. If input parameter is not a `number`, `undefined` is returned.
