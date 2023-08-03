@@ -11,6 +11,8 @@
 `numbers` (test): function which receives an `array` and returns `true` if input parameters are type of `number` and returns `false` if opposite applies.
 
 
+
+
 <!---
 `compareTrue`: receives two boolean values and returns `true` if received values are true.\
 
