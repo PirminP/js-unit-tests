@@ -23,4 +23,22 @@ trabalho na Trybe e mando muito em programação!
 `createStudent` (function): receives a name as input parameter and returns an `object` based of two `keys`:\
 (1) `name`, representing input parameter and (2) `feedback`, containing a function which returns 'Eita pessoa boa!' when called.
 
+`productDetails` (test): function which receives two `strings` of product names and returns an `array` with two `objects` and following product details:
+```
+[
+  {
+    name: 'Alcool gel'
+    details: {
+      productId: 'Alcool gel123'
+    }
+  },
+  {
+    name: 'Máscara'
+    details: {
+      productId: 'Máscara123'
+    }
+  }
+]
+```
+
 
