@@ -41,4 +41,8 @@ trabalho na Trybe e mando muito em programação!
 ]
 ```
 
-
+`calculator` (function): receives two integer `numbers` and returns an `object` with following `keys`:\
+(1) `sum`, which sums up the two values\
+(2) `mult`, which multiply the values\
+(3) `div`, which divide the values\
+(4) `sub`, which substract the values
