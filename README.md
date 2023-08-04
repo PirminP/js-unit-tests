@@ -46,3 +46,7 @@ trabalho na Trybe e mando muito em programação!
 (2) `mult`, which multiply the values\
 (3) `div`, which divide the values\
 (4) `sub`, which substract the values
+
+
+`arrayGenerator` (function): which converts `objects` in `arrays` by means of keys, values or entries. Function reveives two parameters, first one (1) a `string` which indicates the type of conversion and the second one (2) the proper `object` to be transformed.
+
