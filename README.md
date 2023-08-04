@@ -50,3 +50,8 @@ trabalho na Trybe e mando muito em programação!
 
 `arrayGenerator` (function): which converts `objects` in `arrays` by means of keys, values or entries. Function reveives two parameters, first one (1) a `string` which indicates the type of conversion and the second one (2) the proper `object` to be transformed.
 
+`myCounter` (function): Has two for loops which insert values into `array`, the function must be modified without eliminating the loops, so that the function returns the correct `array` presented in the tests.
+
+`getCharacter` (test): function which receives a `string` which represents a name of a character in Game of Thrones and returns a `object` with its name, class and phrases.
+
+
