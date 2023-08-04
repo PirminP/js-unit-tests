@@ -54,4 +54,9 @@ trabalho na Trybe e mando muito em programação!
 
 `getCharacter` (test): function which receives a `string` which represents a name of a character in Game of Thrones and returns a `object` with its name, class and phrases.
 
+`createMenu` (function & test TDD): function which creates an order system for a restaurante where it is possible to:\
+(1) read the menu\
+(2) make a order\
+(3) verify order and \
+(4) sum up value of order
 
